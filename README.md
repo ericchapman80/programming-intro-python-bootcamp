@@ -106,10 +106,14 @@ Each phase should use this workflow:
 Before publishing publicly:
 
 - Confirm there is no private student information beyond what you intentionally want public.
-- Choose and add a license.
+- Confirm the MIT license is the intended reuse policy.
 - Confirm sample data is safe to publish.
 - Confirm instructor materials do not contain full answer keys.
 - Review `.gitignore` before committing generated files.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
 
 ## Key Documents
 
@@ -120,4 +124,3 @@ Before publishing publicly:
 - [Reviewer Guide](docs/reviewer-guide.md)
 - [Terminal Cheat Sheet](cheatsheets/terminal-cheat-sheet.md)
 - [Git Cheat Sheet](cheatsheets/git-cheat-sheet.md)
-
