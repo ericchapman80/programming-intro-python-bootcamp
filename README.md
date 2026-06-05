@@ -19,7 +19,7 @@ The first student is Riley Chapman, an incoming college freshman and track and f
 
 The course assumes:
 
-- Beginner programming experience
+- No prior programming experience required
 - macOS
 - VS Code
 - Terminal
@@ -59,32 +59,17 @@ The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 tot
 └── reflections/
 ```
 
-## Getting Started
+## Start Here
 
-1. Open Terminal.
-2. Go to this repository folder.
-3. Open it in VS Code.
+This README is the map for the bootcamp. The first real work happens in [Phase 00: Developer Workstation](phases/phase-00-developer-workstation.md).
 
-```bash
-cd ~/projects/programming-intro-python-bootcamp
-code .
-```
+If you are the student, start there and follow the instructions one step at a time. Phase 00 teaches how to open Terminal, find the project folder, verify tools, and open the repo in VS Code.
 
-Verify tools:
+If you are the reviewer or instructor, read these first:
 
-```bash
-brew --version
-python3 --version
-git --version
-code --version
-```
-
-Run the starter app:
-
-```bash
-cd app
-python3 app.py
-```
+- [AI Guidelines](AI_GUIDELINES.md)
+- [Reviewer Guide](docs/reviewer-guide.md)
+- [Demo Guide](docs/demo-guide.md)
 
 ## GitHub Workflow
 
