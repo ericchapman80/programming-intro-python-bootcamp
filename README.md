@@ -33,7 +33,7 @@ The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 tot
 | Phase | Focus | Main Deliverable |
 | --- | --- | --- |
 | 00 | Developer workstation | Tools verified and Phase 00 reflection PR |
-| 01 | First Python program | `app/app.py` prints a welcome message |
+| 01 | First Python program | `app/app.py` update and Phase 01 reflection PR |
 | 02 | Variables and input | Athlete profile terminal program |
 | 03 | Conditionals | Goal comparison logic |
 | 04 | Lists and loops | Multiple results and best result |
