@@ -20,14 +20,13 @@ This bootcamp builds Track Career Analyzer in small increments.
 
 The app begins as a small terminal program and grows into:
 
-1. A printed welcome message.
-2. An athlete profile.
-3. Goal comparison logic.
-4. Multiple saved results.
-5. Cleaner function-based code.
-6. CSV-backed persistence.
-7. pandas-powered analysis.
-8. Streamlit dashboard.
-9. Shareable app.
-10. Final demo project.
-
+1. A working developer setup with a first reflection PR.
+2. A printed welcome message.
+3. An athlete profile.
+4. Goal comparison logic.
+5. Multiple saved results.
+6. Cleaner function-based code.
+7. CSV-backed persistence.
+8. pandas-powered analysis.
+9. Streamlit dashboard.
+10. Shareable app and final demo project.
