@@ -56,7 +56,7 @@ Move on when:
 | --- | --- | --- | --- | --- |
 | 00 | Tools, Terminal, local vs remote | `reflections/phase-00-reflection.md` | `brew --version`, `python3 --version`, `git --version`, `code --version`, `git status` | Explain each tool and show reflection |
 | 01 | `.py`, `print()`, syntax | `app/app.py`, `reflections/phase-01-reflection.md` | `python3 app.py` | Change message live |
-| 02 | Variables, input, type conversion | `app/app.py` | `python3 app.py` | Enter profile twice |
+| 02 | Variables, input, type conversion | `app/app.py`, `reflections/phase-02-reflection.md` | `python3 app.py` | Enter profile twice |
 | 03 | Conditionals, booleans | `app/app.py` | `python3 app.py` | Below/equal/above goal |
 | 04 | Lists and loops | `app/app.py` | `python3 app.py` | Add multiple results |
 | 05 | Functions | `app/app.py` | `python3 app.py` | Explain one function |
@@ -69,3 +69,5 @@ Move on when:
 For detailed Phase 00 review guidance, use [Phase 00 Review Checklist](../instructor/reviewer-checklists/phase-00-review-checklist.md).
 
 For detailed Phase 01 review guidance, use [Phase 01 Review Checklist](../instructor/reviewer-checklists/phase-01-review-checklist.md).
+
+For detailed Phase 02 review guidance, use [Phase 02 Review Checklist](../instructor/reviewer-checklists/phase-02-review-checklist.md).
