@@ -37,7 +37,7 @@ The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 tot
 | 02 | Variables and input | Athlete profile program and Phase 02 reflection PR |
 | 03 | Conditionals | Goal comparison logic and Phase 03 reflection PR |
 | 04 | Lists and loops | Multiple results, best result, and Phase 04 reflection PR |
-| 05 | Functions | Cleaner reusable code |
+| 05 | Functions | Refactored functions and Phase 05 reflection PR |
 | 06 | CSV files | Saved results in `app/data/results.csv` |
 | 07 | pandas | Data analysis summaries |
 | 08 | Streamlit | Phone-friendly web app |
