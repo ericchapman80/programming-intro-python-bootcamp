@@ -60,7 +60,7 @@ Move on when:
 | 03 | Conditionals, booleans | `app/app.py`, `reflections/phase-03-reflection.md` | `python3 app.py` | Faster/equal/still-chasing goal |
 | 04 | Lists and loops | `app/app.py`, `reflections/phase-04-reflection.md` | `python3 app.py` | Add multiple results and change loop count |
 | 05 | Functions | `app/app.py`, `reflections/phase-05-reflection.md` | `python3 app.py` | Explain one function and one return value |
-| 06 | CSV persistence | `app/app.py`, `app/data/results.csv` | `python3 app.py` | Show CSV changed |
+| 06 | CSV persistence | `app/app.py`, `app/data/results.csv`, `reflections/phase-06-reflection.md` | `python3 app.py` | Save result and show CSV changed |
 | 07 | pandas analysis | `app/app.py`, data files | `python3 app.py` | Show one statistic |
 | 08 | Streamlit app | `app/streamlit_app.py` | `streamlit run streamlit_app.py` | Browser demo |
 | 09 | Deployment and sharing | README, app config | Deployment command TBD | Public-readiness check |
@@ -77,3 +77,5 @@ For detailed Phase 03 review guidance, use [Phase 03 Review Checklist](../instru
 For detailed Phase 04 review guidance, use [Phase 04 Review Checklist](../instructor/reviewer-checklists/phase-04-review-checklist.md).
 
 For detailed Phase 05 review guidance, use [Phase 05 Review Checklist](../instructor/reviewer-checklists/phase-05-review-checklist.md).
+
+For detailed Phase 06 review guidance, use [Phase 06 Review Checklist](../instructor/reviewer-checklists/phase-06-review-checklist.md).
