@@ -1,14 +1,14 @@
-# Programming Intro Python Bootcamp
+# Programming Intro Python Bootcamp 🏃‍♀️💻
 
 A beginner-friendly software engineering bootcamp for an incoming college freshman preparing for an introductory Python course.
 
 This is a curriculum repository. The project app built through the phases is **Track Career Analyzer**, a Python project that grows from a terminal program into a simple data analysis and Streamlit app.
 
 > [!NOTE]
-> Start with [Phase 00](phases/phase-00-developer-workstation.md). Each phase is written like a guided working session: read a little, build a little, run it, explain it, then open a pull request.
+> 🏁 Start with [Phase 00](phases/phase-00-developer-workstation.md). Each phase is written like a guided working session: read a little, build a little, run it, explain it, then open a pull request.
 
 > [!TIP]
-> The goal is not to race through the files. The goal is to build enough confidence that Riley can explain what she made without needing AI to speak for her.
+> ✨ The goal is not to race through the files. The goal is to build enough confidence that Riley can explain what she made without needing AI to speak for her.
 
 ## Goals
 
@@ -91,6 +91,7 @@ If you are the student, start there and follow the instructions one step at a ti
 If you are the reviewer or instructor, read these first:
 
 - [AI Guidelines](AI_GUIDELINES.md)
+- [AI Tooling Landscape](docs/ai-tooling-landscape.md)
 - [Reviewer Guide](docs/reviewer-guide.md)
 - [Demo Guide](docs/demo-guide.md)
 
@@ -148,6 +149,8 @@ This project is available under the [MIT License](LICENSE).
 ## Key Documents
 
 - [AI Guidelines](AI_GUIDELINES.md)
+- [AI Tooling Landscape](docs/ai-tooling-landscape.md)
+- [AI Coaching Guide](docs/ai-coaching-guide.md)
 - [Concept Glossary](CONCEPTS.md)
 - [Project Roadmap](docs/project-roadmap.md)
 - [Repo Strategy](docs/repo-strategy.md)

@@ -319,6 +319,59 @@ Fill out the pull request template.
 
 Be specific about AI usage. If you used AI to understand an error message, say what you asked and what you learned.
 
+## Optional Level-Up: AI Assistant Setup 🤖
+
+Do this only after the main Phase 01 work is running, committed, pushed, and opened as a pull request.
+
+The first Python win should be manual: open the file, run it, change it, commit it, and explain it yourself. After that, it is reasonable to set up an AI assistant as a coach.
+
+> [!TIP]
+> This is optional. If setup starts to feel like a distraction, skip it and keep moving to Phase 02.
+
+### Option 1: ChatGPT As A Tutor
+
+Use ChatGPT in the browser or app for explanations, hints, and review questions.
+
+Good uses:
+
+- Explain a Python error message.
+- Ask quiz questions about `print()`, strings, and Terminal commands.
+- Help rewrite a confusing reflection sentence in Riley's own words.
+- Review a small code snippet for readability.
+
+Avoid:
+
+- Asking for the full Phase 01 solution.
+- Asking AI to write the reflection from scratch.
+- Copying code you cannot explain.
+
+### Option 2: One Coding Assistant
+
+If the family wants an IDE or coding assistant, pick one tool to try first.
+
+Examples include:
+
+- OpenAI Codex in an IDE, CLI, app, or web workflow.
+- GitHub Copilot in VS Code.
+- Specialized AI IDEs such as Cursor or Windsurf.
+- Other command-line assistants.
+
+The specific choice depends on the account you already have, comfort level, privacy settings, cost, and how much help feels useful instead of distracting.
+
+Read:
+
+- [AI Guidelines](../AI_GUIDELINES.md)
+- [AI Tooling Landscape](../docs/ai-tooling-landscape.md)
+- [AI Coaching Guide](../docs/ai-coaching-guide.md)
+
+### Phase 01 AI Rules
+
+- Ask for hints before code.
+- Ask AI to explain errors, not erase them.
+- Keep the final code small enough to explain.
+- Say exactly how AI helped in the PR.
+- Make the demo live change without AI.
+
 ## Common Stuck Points
 
 ### `python3 app.py` says file not found
