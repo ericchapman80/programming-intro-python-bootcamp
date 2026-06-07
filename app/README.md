@@ -34,3 +34,11 @@ The student's working data file is `data/results.csv` once Phase 06 is complete.
 ## App Link
 
 Deployment status: Not deployed yet. The app can be run locally with Streamlit.
+
+## Final Demo
+
+Use the repository-level final demo checklist:
+
+```text
+docs/final-demo-checklist.md
+```
