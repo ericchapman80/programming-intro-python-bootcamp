@@ -40,7 +40,7 @@ The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 tot
 | 05 | Functions | Refactored functions and Phase 05 reflection PR |
 | 06 | CSV files | Saved results CSV and Phase 06 reflection PR |
 | 07 | pandas | Data analysis summaries and Phase 07 reflection PR |
-| 08 | Streamlit | Phone-friendly web app |
+| 08 | Streamlit | Phone-friendly Streamlit app and Phase 08 reflection PR |
 | 09 | Deployment | Public-readiness and sharing |
 | 10 | Final demo | Walkthrough and retrospective |
 
