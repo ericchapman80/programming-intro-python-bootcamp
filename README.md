@@ -113,3 +113,4 @@ This project is available under the [MIT License](LICENSE).
 - [Reviewer Guide](docs/reviewer-guide.md)
 - [Terminal Cheat Sheet](cheatsheets/terminal-cheat-sheet.md)
 - [Git Cheat Sheet](cheatsheets/git-cheat-sheet.md)
+- [Bonus CI/CD Notes](docs/bonus-ci-cd.md)

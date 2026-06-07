@@ -294,6 +294,51 @@ Fill out the pull request template.
 
 Be specific in the AI usage section. If you did not use AI, say that.
 
+## Optional: Automating Mac Setup With A Brewfile
+
+Do this section only after you understand the manual setup steps above.
+
+Manual setup matters because it teaches what each tool does. A `Brewfile` is different: it is a way to document developer tools so another person can install the same tools faster.
+
+This repository includes:
+
+```text
+Brewfile
+```
+
+Open it and read it.
+
+It lists Mac developer tools for this bootcamp:
+
+```ruby
+brew "git"
+brew "python"
+
+cask "visual-studio-code"
+```
+
+If someone has Homebrew installed, they can install the tools from the Brewfile with:
+
+```bash
+brew bundle --file=Brewfile
+```
+
+You can also ask Homebrew what tools are currently installed and write them to a Brewfile:
+
+```bash
+brew bundle dump --file=Brewfile
+```
+
+Do not run `brew bundle dump` in this repository during Phase 00 unless an instructor asks you to. It may add extra tools from your personal MacBook that do not belong in this beginner project.
+
+Important idea:
+
+- Manual setup teaches what tools are.
+- A Brewfile documents expected tools.
+- `brew bundle` helps another developer recreate a similar setup.
+
+This is a small preview of reproducible developer environments. It is not required to move on.
+
 ## Common Stuck Points
 
 ### `code .` does not work
@@ -367,6 +412,7 @@ Explain:
 - What Git is.
 - What GitHub is.
 - What local vs remote means.
+- Optional: what a Brewfile is.
 
 Live change:
 
@@ -385,3 +431,6 @@ You are ready for Phase 01 when:
 - You can explain local vs remote in plain language.
 - You created, committed, pushed, and opened a PR for your Phase 00 reflection.
 
+Optional:
+
+- You can explain why a Brewfile helps another developer set up a similar Mac.

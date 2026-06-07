@@ -20,8 +20,12 @@ Printable beginner reference.
 | `python3 --version` | Shows Python version | `python3 --version` | Confirms Python is installed | Version matters |
 | `python3 app.py` | Runs Python file | `python3 app.py` | Runs your program | Run from the right folder |
 | `brew --version` | Shows Homebrew version | `brew --version` | Confirms Homebrew is installed | macOS setup tool |
+| `brew bundle --file=Brewfile` | Installs tools listed in Brewfile | `brew bundle --file=Brewfile` | Recreates documented Mac tool setup | Read the Brewfile first |
 
 ## Navigation Tip
 
 Use `pwd` often. It answers the most important Terminal question: "Where am I?"
 
+## Brewfile Tip
+
+A `Brewfile` documents Homebrew tools for a project. In this bootcamp it is optional and used as a preview of setup automation.
