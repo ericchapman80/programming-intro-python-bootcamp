@@ -42,7 +42,7 @@ The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 tot
 | 07 | pandas | Data analysis summaries and Phase 07 reflection PR |
 | 08 | Streamlit | Phone-friendly Streamlit app and Phase 08 reflection PR |
 | 09 | Deployment | Public-readiness, sharing note, and Phase 09 reflection PR |
-| 10 | Final demo | Walkthrough and retrospective |
+| 10 | Final demo | Final demo checklist and retrospective PR |
 
 ## Repository Layout
 
@@ -100,6 +100,10 @@ Before publishing publicly:
 
 Deployment status: Not deployed yet. The app can be run locally with Streamlit.
 
+## Bootcamp Status
+
+Core curriculum phases 00-10 are drafted.
+
 ## License
 
 This project is available under the [MIT License](LICENSE).
@@ -111,6 +115,7 @@ This project is available under the [MIT License](LICENSE).
 - [Project Roadmap](docs/project-roadmap.md)
 - [Repo Strategy](docs/repo-strategy.md)
 - [Reviewer Guide](docs/reviewer-guide.md)
+- [Final Demo Checklist](docs/final-demo-checklist.md)
 - [Terminal Cheat Sheet](cheatsheets/terminal-cheat-sheet.md)
 - [Git Cheat Sheet](cheatsheets/git-cheat-sheet.md)
 - [Bonus CI/CD Notes](docs/bonus-ci-cd.md)
