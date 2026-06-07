@@ -32,6 +32,21 @@ The course assumes:
 - GitHub account
 - Willingness to explain code out loud
 
+## Why Python?
+
+Python is the language for this bootcamp because it matches Riley's introductory college programming course.
+
+That is the practical reason. If the target course used Java, C++, Go, or another language, this curriculum could be adapted to that language instead. The deeper goal is not "Python is the only right first language." The goal is to learn how programming works: variables, input, conditionals, loops, functions, files, data, debugging, Git, GitHub, and explaining code clearly.
+
+> [!NOTE]
+> 🧠 Python is the practice language here. The real skill is learning how to think, build, test, and explain like a developer.
+
+## Why OpenAI Codex?
+
+OpenAI Codex appears in the optional AI setup notes because that is the tool this family already has access to.
+
+It is not required for the curriculum. Other learners can use ChatGPT, GitHub Copilot, Cursor, Windsurf, Claude Code, another coding assistant, or no coding assistant at all. The AI rule is the important part: AI may coach, explain, review, and ask questions, but Riley owns the code and must be able to explain it.
+
 ## Bootcamp Roadmap
 
 The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 total hours.
