@@ -30,3 +30,12 @@ The app begins as a small terminal program and grows into:
 8. pandas-powered analysis.
 9. Streamlit dashboard.
 10. Shareable app and final demo project.
+
+## Optional Bonus Topics
+
+These are not required for the beginner introduction, but they can be added after the core phases if the student is curious.
+
+- **Brewfile setup automation**: introduced lightly in Phase 00 as an optional preview after manual setup.
+- **CI/CD with GitHub Actions**: optional bonus after Phase 09 or Phase 10. Use it to explain how teams automatically run checks when code is pushed or a pull request is opened.
+
+CI/CD should not be a required beginner phase. It is useful, but it can distract from the main goals: Python, Git, GitHub, data analysis, Streamlit, and explaining code clearly.
