@@ -2,6 +2,25 @@
 
 This guide helps a parent, reviewer, or instructor coach the student. The tone should be coaching-oriented, not grading-oriented.
 
+## Facilitator Mindset
+
+This curriculum intentionally leans into AI instead of pretending students will never use it.
+
+The goal is to tune AI into a coach, not a doer. A good AI interaction should help the student notice a clue, understand an error, compare options, or explain a concept more clearly. It should not quietly replace the student's thinking or produce code the student cannot defend.
+
+> [!IMPORTANT]
+> The review standard is understanding. AI-assisted work is acceptable when the student can explain the final code, describe what AI helped with, and make one small live change without AI.
+
+When reviewing AI-assisted work, ask:
+
+- What did you ask AI?
+- What answer was useful?
+- What did you ignore or change?
+- Which line was still confusing after AI helped?
+- Can you explain this without looking at the AI conversation?
+
+See also [AI Guidelines](../AI_GUIDELINES.md), [AI Coaching Guide](ai-coaching-guide.md), and [AI Tooling Landscape](ai-tooling-landscape.md).
+
 ## Review Pattern For Every Phase
 
 Ask:

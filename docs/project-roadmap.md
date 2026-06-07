@@ -66,3 +66,25 @@ These are not required for the beginner introduction, but they can be added afte
 - **CI/CD with GitHub Actions**: optional bonus after Phase 09 or Phase 10. Use it to explain how teams automatically run checks when code is pushed or a pull request is opened.
 
 CI/CD should not be a required beginner phase. It is useful, but it can distract from the main goals: Python, Git, GitHub, data analysis, Streamlit, and explaining code clearly.
+
+## Final Polish Roadmap
+
+Core curriculum phases 00-10 are drafted. The remaining work is polish, not new required phase design.
+
+| Area | Status | Next pass |
+| --- | --- | --- |
+| Phase guides | Drafted and decorated | Read end to end for flow, repetition, and learner energy |
+| README files | In progress | Make them welcoming without hiding the practical setup details |
+| AI guidance | In progress | Keep AI optional, coach-oriented, and easy to disclose |
+| Instructor materials | In progress | Make review expectations clear without adding answer keys |
+| Diagrams and callouts | In progress | Use only where they reduce cognitive load |
+| App scaffold | Intentionally minimal | Leave starter code small until Riley builds through the phases |
+| Bonus topics | Drafted separately | Keep Brewfile and CI/CD optional |
+
+Recommended final sequence:
+
+1. Finish the current polish PR review.
+2. Merge the current polish PR.
+3. Do one clean read-through from Phase 00 to Phase 02 as Riley would experience it.
+4. Do one instructor read-through of the reviewer guide and checklists.
+5. Mark the repo ready for Riley's first run.
