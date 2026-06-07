@@ -25,8 +25,10 @@ app/data/results.csv
 git switch main
 git pull
 git switch -c phase-08-streamlit-app
-python3 -m pip show streamlit
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pip show streamlit
 cd app
 streamlit run streamlit_app.py
 python3 -m streamlit run streamlit_app.py
@@ -89,4 +91,3 @@ Before moving on, let's trace one value from the CSV into the table, metric, and
 ```text
 Keep the app simple for now. Deployment and sharing are the focus of Phase 09.
 ```
-

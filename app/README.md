@@ -23,6 +23,16 @@ cd app
 python3 app.py
 ```
 
+## Install App Dependencies
+
+Starting in Phase 07, use a local virtual environment before installing pandas and Streamlit:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
 ## Run The Streamlit App
 
 This file exists after Phase 08:

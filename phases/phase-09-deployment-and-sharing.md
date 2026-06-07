@@ -223,10 +223,12 @@ streamlit
 Run:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-This confirms another environment can install the same libraries.
+This confirms another environment can install the same libraries without changing the system Python.
 
 ## Step 4: Check Public Data
 

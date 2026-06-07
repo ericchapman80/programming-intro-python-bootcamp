@@ -158,17 +158,22 @@ From the repository root, run:
 python3 -m pip show pandas
 ```
 
-If pandas is not installed, install requirements:
+If pandas is not installed, create and use a local virtual environment:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
 Then check again:
 
 ```bash
-python3 -m pip show pandas
+python -m pip show pandas
 ```
+
+> [!IMPORTANT]
+> On modern macOS, Homebrew Python may block direct package installs with an "externally managed environment" message. A `.venv` keeps project packages local to this repo and avoids changing the system Python.
 
 ## Step 3: Inspect The CSV File
 
@@ -547,7 +552,9 @@ pandas is not installed in the Python environment you are using.
 From the repository root, run:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
 ### `FileNotFoundError`

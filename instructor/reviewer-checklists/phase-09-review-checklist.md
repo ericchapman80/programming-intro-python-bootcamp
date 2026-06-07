@@ -28,11 +28,13 @@ Deployment is encouraged if the app and data are ready, but it is acceptable to 
 git switch main
 git pull
 git switch -c phase-09-deployment-sharing
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 cd app
 streamlit run streamlit_app.py
 python3 -m streamlit run streamlit_app.py
 cd ..
-python3 -m pip install -r requirements.txt
 git status
 git diff README.md app/README.md
 git add README.md app/README.md docs/sharing-note-template.md reflections/phase-09-reflection.md
@@ -92,4 +94,3 @@ Before moving on, let's verify the app entry point and the data file path one mo
 ```text
 Deferring deployment is acceptable when you can clearly explain what still needs to be checked.
 ```
-

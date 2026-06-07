@@ -151,16 +151,18 @@ From the repository root, run:
 python3 -m pip show streamlit
 ```
 
-If Streamlit is not installed, install requirements:
+If Streamlit is not installed, create and use a local virtual environment:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
 Then check again:
 
 ```bash
-python3 -m pip show streamlit
+python -m pip show streamlit
 ```
 
 ## Step 3: Create The Streamlit File
@@ -524,7 +526,9 @@ If that works, Streamlit is installed but the shell command is not directly avai
 Install requirements from the repository root:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
 ### Browser does not open

@@ -150,9 +150,9 @@ requirements.txt
 
 You do not need to explain every file in the repository. Focus on the app and the learning materials.
 
-## Step 4: Create The Final Demo Checklist
+## Step 4: Update The Final Demo Checklist
 
-Create:
+Create or update:
 
 ```text
 docs/final-demo-checklist.md
@@ -178,9 +178,9 @@ Add:
 
 Use this during demo practice.
 
-## Step 5: Create The Final Retrospective
+## Step 5: Update The Final Retrospective
 
-Create:
+Create or update:
 
 ```text
 reflections/final-retrospective.md

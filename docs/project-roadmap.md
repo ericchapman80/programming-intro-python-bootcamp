@@ -67,24 +67,37 @@ These are not required for the beginner introduction, but they can be added afte
 
 CI/CD should not be a required beginner phase. It is useful, but it can distract from the main goals: Python, Git, GitHub, data analysis, Streamlit, and explaining code clearly.
 
-## Final Polish Roadmap
+## Launch Readiness
 
-Core curriculum phases 00-10 are drafted. The remaining work is polish, not new required phase design.
+Core curriculum phases 00-10 are drafted and ready for Riley's first guided run.
 
-| Area | Status | Next pass |
+| Area | Reality after walkthrough | Next action |
 | --- | --- | --- |
-| Phase guides | Drafted and decorated | Read end to end for flow, repetition, and learner energy |
-| README files | In progress | Make them welcoming without hiding the practical setup details |
-| AI guidance | In progress | Keep AI optional, coach-oriented, and easy to disclose |
-| Instructor materials | In progress | Make review expectations clear without adding answer keys |
-| Diagrams and callouts | In progress | Use only where they reduce cognitive load |
-| App scaffold | Intentionally minimal | Leave starter code small until Riley builds through the phases |
-| Bonus topics | Drafted separately | Keep Brewfile and CI/CD optional |
+| Phase guides | Complete enough for a beginner-guided run | Use them with Riley and adjust only where she actually gets stuck |
+| README files | Clear on audience, Python choice, AI choice, and local run path | Keep deployment status current if the app is later published |
+| AI guidance | Optional and coach-oriented | Reinforce PR disclosure and live explain-back during reviews |
+| Instructor materials | Public-safe and review-focused | Keep answer keys out of this repository |
+| App scaffold | Intentionally minimal on `main` | Let Riley build the app through the phase PRs |
+| Dependencies | `requirements.txt` is present; `.venv/` is ignored | Use a local virtual environment before installing pandas or Streamlit |
+| Bonus topics | Brewfile and CI/CD are optional extras | Save them for after the first bootcamp pass unless Riley is curious |
 
-Recommended final sequence:
+## Walkthrough Findings
 
-1. Finish the current polish PR review.
-2. Merge the current polish PR.
-3. Do one clean read-through from Phase 00 to Phase 02 as Riley would experience it.
-4. Do one instructor read-through of the reviewer guide and checklists.
-5. Mark the repo ready for Riley's first run.
+The final pre-launch walkthrough used a fresh clone and followed the curriculum as Riley would experience it.
+
+- Phase 00-01: starter repo and first Python run are short and confidence-building.
+- Phase 02-05: terminal app flow builds cleanly from variables to functions.
+- Phase 06: CSV persistence works when the app is run from inside `app`.
+- Phase 07-08: pandas and Streamlit require dependency setup; use `.venv` to avoid Homebrew Python package-install errors.
+- Phase 09: deployment is correctly optional; local sharing is an acceptable outcome.
+- Phase 10: final checklist and retrospective already exist as starter files, so the student should update them.
+
+## Ready Criteria
+
+The repo is ready for Riley's first run when:
+
+- Local `main` matches `origin/main`.
+- Old local phase branches are deleted.
+- Riley can clone the repo and run `python3 app.py` from `app`.
+- The facilitator knows Phase 07 starts the `.venv` dependency setup.
+- Reviews focus on explanation, not speed.

@@ -20,8 +20,10 @@ reflections/phase-07-reflection.md
 git switch main
 git pull
 git switch -c phase-07-pandas-analysis
-python3 -m pip show pandas
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pip show pandas
 cd app
 python3 app.py
 cd ..
@@ -84,4 +86,3 @@ Before moving on, let's trace one CSV row into the DataFrame and then into your 
 ```text
 Keep the analysis simple. Phase 08 will focus on making this visible in a Streamlit app.
 ```
-
