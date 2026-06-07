@@ -6,6 +6,19 @@ Use variables and `input()` to create a simple athlete profile.
 
 By the end of this phase, you should be able to ask the user questions, store answers in variables, convert text input into numbers when needed, and print a formatted athlete profile.
 
+> [!TIP]
+> Phase 02 is where the app stops talking at the user and starts listening.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Store a name in a variable | Programs remember values |
+| Use `input()` | Programs can ask questions |
+| Convert text to numbers | Data types matter |
+| Print a profile | Variables can drive output |
+| Explain one conversion error | Debugging starts with reading |
+
 ## Why This Phase Matters
 
 Most useful programs need information from the user.
@@ -80,6 +93,9 @@ graduation_year = 2026
 ### Type Conversion
 
 `input()` always gives Python text, even if the user types a number.
+
+> [!IMPORTANT]
+> This is a classic beginner moment: `input()` returns text. Use `int()` or `float()` only when the program needs a number.
 
 If you want a whole number, use `int()`:
 
@@ -257,6 +273,9 @@ Do not build complex event-specific formatting yet.
 ## Step 8: Practice A Type Conversion Error
 
 This step is optional but useful.
+
+> [!WARNING]
+> Practice the error, then return to valid numeric input. The final PR should run cleanly.
 
 Run the app and type words when it asks for graduation year:
 
@@ -467,4 +486,3 @@ You are ready for Phase 03 when:
 - You can make one small profile-field change without AI.
 - You committed and pushed your Phase 02 work.
 - You opened a pull request and completed the AI disclosure.
-

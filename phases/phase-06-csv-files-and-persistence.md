@@ -6,6 +6,27 @@ Save track results in a CSV file so data does not disappear when the program end
 
 By the end of this phase, you should be able to explain what persistence means, read rows from a CSV file, append a new result, save it, and display the saved results when the app runs again.
 
+> [!TIP]
+> Phase 06 is where the app gets a memory.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Create `results.csv` | Data can live outside Python |
+| Load rows | Programs can read saved data |
+| Add a row | User input can become stored data |
+| Save with append mode | New data can be added safely |
+| Rerun the app | Persistence means data survives |
+
+```mermaid
+flowchart LR
+    input["Terminal input"] --> python["Python app"]
+    python --> csv["app/data/results.csv"]
+    csv --> reload["Next app run"]
+    reload --> display["Display saved results"]
+```
+
 ## Why This Phase Matters
 
 So far, the app forgets everything when it stops running.
@@ -71,6 +92,9 @@ date,event,mark,meet,notes
 ### File Path
 
 A file path tells Python where a file lives.
+
+> [!IMPORTANT]
+> File paths are picky. Most Phase 06 bugs come from running the app in one folder while Python looks for files in another.
 
 Example:
 
@@ -282,6 +306,9 @@ For this phase, store `mark` as text in the CSV. Pandas will help with numeric a
 ## Step 8: Write A Function To Save One Result
 
 Add:
+
+> [!WARNING]
+> Use append mode (`"a"`) here. Write mode (`"w"`) can replace the whole file if used carelessly.
 
 ```python
 def save_result(result):
@@ -564,4 +591,3 @@ You are ready for Phase 07 when:
 - You can make one small CSV change without AI.
 - You committed and pushed your Phase 06 work.
 - You opened a pull request and completed the AI disclosure.
-

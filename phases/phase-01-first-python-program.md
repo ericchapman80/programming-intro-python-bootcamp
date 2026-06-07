@@ -6,6 +6,19 @@ Run and edit your first Python program.
 
 By the end of this phase, you should be able to open `app/app.py`, explain what `print()` does, run the program from Terminal, make a small change, commit it, push it, and open a pull request.
 
+> [!TIP]
+> Your first win is simple: make Python say something, then change what it says.
+
+## At A Glance
+
+| You will | What it proves |
+| --- | --- |
+| Open `app/app.py` | You can find code in the repo |
+| Run `python3 app.py` | You can execute Python |
+| Edit a `print()` message | You can change program output |
+| Read one error | Bugs are clues, not dead ends |
+| Open a PR | Your code change has a review path |
+
 ## Why This Phase Matters
 
 This is the first time you change code in the Track Career Analyzer app.
@@ -77,6 +90,9 @@ The second example is missing a closing quotation mark.
 ### Error Message
 
 An error message is Python giving you a clue about what went wrong.
+
+> [!IMPORTANT]
+> Do not memorize error messages. Learn to slow down and find the file name, line number, and clue.
 
 Do not panic when you see one. Read it slowly.
 
@@ -194,6 +210,9 @@ You should see your new line in the output.
 ## Step 6: Practice Reading An Error
 
 This step is optional but useful.
+
+> [!WARNING]
+> Break the code only for practice, then fix it before committing. Never commit code you already know is broken.
 
 Temporarily break one line by removing a closing quotation mark:
 

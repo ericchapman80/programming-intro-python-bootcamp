@@ -6,6 +6,27 @@ Turn Track Career Analyzer into a simple Streamlit web app that runs in a browse
 
 By the end of this phase, you should be able to create `streamlit_app.py`, run it locally, display saved CSV results, show simple pandas statistics, add a chart, and explain the difference between a terminal app and a browser-based app.
 
+> [!TIP]
+> Phase 08 is the show-and-tell upgrade: same data, much easier to see.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Create `streamlit_app.py` | Python can power a browser app |
+| Run localhost | Your Mac can host a local app |
+| Display a table | Data can be visual |
+| Add widgets | Users can interact |
+| Add metrics and chart | Analysis becomes demo-ready |
+
+```mermaid
+flowchart LR
+    csv["CSV data"] --> pandas["pandas"]
+    pandas --> streamlit["Streamlit app"]
+    streamlit --> browser["Browser on localhost"]
+    browser --> demo["Phone-friendly demo"]
+```
+
 ## Why This Phase Matters
 
 The app has already learned how to collect data, save data, and analyze data.
@@ -54,6 +75,9 @@ The nickname `st` is a common convention.
 ### Localhost
 
 Localhost means your own computer.
+
+> [!NOTE]
+> Localhost is not the public internet. It means "this app is running on my own machine."
 
 When Streamlit starts, it usually opens a URL like:
 
@@ -343,6 +367,9 @@ For timed events, lower is better, so improvement may appear as the line going d
 ## Step 13: Make It Phone-Friendly
 
 Streamlit handles much of the responsive layout automatically.
+
+> [!IMPORTANT]
+> Phone-friendly does not mean fancy. It means clear sections, readable labels, and no cramped side-by-side layout.
 
 Keep the layout simple:
 

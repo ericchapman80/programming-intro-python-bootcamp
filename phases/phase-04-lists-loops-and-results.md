@@ -6,6 +6,19 @@ Use lists and loops to work with more than one track result.
 
 By the end of this phase, you should be able to store multiple results in a list, loop through the list, count the results, and find the best result for a timed event.
 
+> [!TIP]
+> Phase 04 is the jump from one result to a season of results.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Create a list | Store many values together |
+| Use `append()` | Add results over time |
+| Use a `for` loop | Repeat work without copy/paste |
+| Use `len()` | Count data |
+| Use `min()` | Find the best timed result |
+
 ## Why This Phase Matters
 
 Real athletes do not have only one result.
@@ -68,6 +81,17 @@ results.append(57.10)
 ### `for` Loop
 
 A `for` loop repeats code once for each item in a list.
+
+```mermaid
+flowchart LR
+    list["results list"] --> item1["result 1"]
+    list --> item2["result 2"]
+    list --> item3["result 3"]
+    item1 --> loop["for result in results"]
+    item2 --> loop
+    item3 --> loop
+    loop --> print["print each result"]
+```
 
 Example:
 
@@ -265,6 +289,9 @@ This is repeated code. That is acceptable for this phase because the goal is und
 ## Step 9: Use A Loop For Repeated Input
 
 Once the three-input version works, replace it with a loop:
+
+> [!IMPORTANT]
+> This is the moment loops become useful: one block of code can collect many results.
 
 ```python
 results = []
@@ -552,4 +579,3 @@ You are ready for Phase 05 when:
 - You can make one small loop-count change without AI.
 - You committed and pushed your Phase 04 work.
 - You opened a pull request and completed the AI disclosure.
-

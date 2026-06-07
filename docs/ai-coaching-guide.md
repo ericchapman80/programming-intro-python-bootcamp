@@ -2,6 +2,9 @@
 
 Use AI to increase understanding, not to skip practice.
 
+> [!TIP]
+> The best AI session ends with the student saying, "I can explain this now."
+
 ## Better Prompts
 
 ```text
@@ -34,3 +37,5 @@ You are in Instructor Mode. Review this Phase 3 pull request against the phase g
 - I can make a small live change.
 - I know what AI helped with.
 
+> [!WARNING]
+> If the student cannot explain code that AI produced, the code is not ready to submit.

@@ -6,6 +6,30 @@ Prepare Track Career Analyzer to be shared, and deploy it if the app and data ar
 
 By the end of this phase, you should be able to explain what deployment means, check a public repository for privacy and readiness, polish the README, deploy a Streamlit app from GitHub, and share either a deployed app link or clear local run instructions.
 
+> [!TIP]
+> Phase 09 is not just "put it online." It is "decide responsibly whether this is ready to share."
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Run the app locally | Deployment starts with a working app |
+| Check data/privacy | Public sharing has responsibility |
+| Polish READMEs | Other people need instructions |
+| Prepare Streamlit Cloud | GitHub can feed a deployed app |
+| Share or defer | A clear decision beats a rushed link |
+
+```mermaid
+flowchart TD
+    local["Runs locally"] --> privacy{"Data safe?"}
+    privacy -- no --> clean["Clean or replace data"]
+    privacy -- yes --> readme["Polish README"]
+    clean --> readme
+    readme --> deploy{"Deploy now?"}
+    deploy -- yes --> link["Share streamlit.app link"]
+    deploy -- no --> localshare["Share local run instructions"]
+```
+
 ## Why This Phase Matters
 
 Building an app is only part of software engineering.
@@ -65,6 +89,9 @@ Check for:
 ### Secret
 
 A secret is sensitive information that should not be committed to GitHub.
+
+> [!WARNING]
+> Secrets do not belong in a public repo. If a file contains passwords, tokens, keys, or private URLs, stop before committing.
 
 Examples:
 
@@ -307,6 +334,9 @@ Deployment status: Not deployed yet.
 ## Step 8: Optional Deployment
 
 Only deploy if:
+
+> [!IMPORTANT]
+> "Not deployed yet" is a valid Phase 09 result if privacy or readiness checks are not complete.
 
 - The app runs locally.
 - The repo is public-ready.

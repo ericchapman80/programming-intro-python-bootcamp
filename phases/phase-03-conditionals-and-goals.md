@@ -6,6 +6,19 @@ Use conditionals to compare an athlete's current mark against a goal.
 
 By the end of this phase, you should be able to write `if`, `elif`, and `else` statements, explain comparison operators, and show different messages depending on whether an athlete has reached a goal.
 
+> [!TIP]
+> This phase is about decisions. The app looks at data and chooses what message to show.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Add a goal mark | Programs can compare values |
+| Use `if` | Run code when a condition is true |
+| Use `elif` | Check another possible condition |
+| Use `else` | Handle everything left over |
+| Test three cases | Good developers test each path |
+
 ## Why This Phase Matters
 
 Programs become more useful when they can make decisions.
@@ -99,6 +112,15 @@ else:
     print("Still chasing")
 ```
 
+```mermaid
+flowchart TD
+    start["Compare current PR to goal"] --> faster{"current_pr < goal_mark?"}
+    faster -- yes --> reached["Goal reached"]
+    faster -- no --> equal{"current_pr == goal_mark?"}
+    equal -- yes --> exact["Exactly at goal"]
+    equal -- no --> chasing["Still chasing"]
+```
+
 ### Indentation
 
 Python uses indentation to know which lines belong inside a conditional.
@@ -122,6 +144,9 @@ The printed line must be indented.
 ## A Track Mark Note
 
 For this phase, use decimal numbers and a simple rule:
+
+> [!NOTE]
+> Track marks are more complex in real life. This phase uses decimal running times so the coding concept stays clear.
 
 For timed running events, lower is better.
 
@@ -556,4 +581,3 @@ You are ready for Phase 04 when:
 - You can make one small goal-message change without AI.
 - You committed and pushed your Phase 03 work.
 - You opened a pull request and completed the AI disclosure.
-

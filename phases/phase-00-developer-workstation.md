@@ -6,6 +6,28 @@ Set up and understand the basic tools used by a beginner software engineer.
 
 By the end of this phase, you should be able to open Terminal, find this project folder, open it in VS Code, verify that the main tools are installed, and explain the difference between your local computer, Git, and GitHub.
 
+> [!TIP]
+> This phase is the warmup lap. Move slowly, run the commands yourself, and say out loud what each tool does.
+
+## At A Glance
+
+| You will | Why it matters |
+| --- | --- |
+| Open Terminal | Developers need a command center |
+| Open the repo in VS Code | Code lives in project folders |
+| Verify tools | You need Python, Git, Homebrew, and VS Code ready |
+| Create a branch and PR | Every phase practices real GitHub workflow |
+| Optional: read the Brewfile | See how setup can be automated later |
+
+```mermaid
+flowchart LR
+    mac["MacBook"] --> terminal["Terminal"]
+    mac --> vscode["VS Code"]
+    terminal --> python["Python"]
+    terminal --> git["Git"]
+    git --> github["GitHub remote"]
+```
+
 ## Why This Phase Matters
 
 Before writing much Python, you need to know where your files live and how developers run tools. This phase is about comfort, not speed.
@@ -40,6 +62,9 @@ You do not need to understand Python yet.
 ## Step 1: Open Terminal
 
 Open the Terminal app on your Mac.
+
+> [!NOTE]
+> Terminal is not scary; it is just another way to talk to your computer. The trick is knowing where you are before you type commands.
 
 Try this command:
 
@@ -208,6 +233,9 @@ The exact wording may vary.
 
 Branches let you work without changing the main version immediately.
 
+> [!IMPORTANT]
+> A branch is your practice lane. `main` stays clean while you work on one phase.
+
 Create a branch for this phase:
 
 ```bash
@@ -297,6 +325,9 @@ Be specific in the AI usage section. If you did not use AI, say that.
 ## Optional: Automating Mac Setup With A Brewfile
 
 Do this section only after you understand the manual setup steps above.
+
+> [!NOTE]
+> This is a preview of how teams help future developers get set up faster. It is optional for Riley's first pass.
 
 Manual setup matters because it teaches what each tool does. A `Brewfile` is different: it is a way to document developer tools so another person can install the same tools faster.
 

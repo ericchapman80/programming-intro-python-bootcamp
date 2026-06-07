@@ -2,6 +2,9 @@
 
 This bootcamp builds Track Career Analyzer in small increments.
 
+> [!TIP]
+> Think of the app as the practice track. Each phase adds one skill and one visible improvement.
+
 ## Time Expectation
 
 - 10 phases
@@ -30,6 +33,30 @@ The app begins as a small terminal program and grows into:
 8. pandas-powered analysis.
 9. Streamlit dashboard.
 10. Shareable app and final demo project.
+
+```mermaid
+flowchart TD
+    terminal["Terminal messages"] --> input["User input"]
+    input --> decisions["Goal decisions"]
+    decisions --> lists["Multiple results"]
+    lists --> functions["Cleaner functions"]
+    functions --> csv["Saved CSV data"]
+    csv --> pandas["pandas analysis"]
+    pandas --> streamlit["Browser app"]
+    streamlit --> sharing["Sharing and final demo"]
+```
+
+## Rhythm Of A Phase
+
+```mermaid
+flowchart LR
+    read["Read concept"] --> build["Build small"]
+    build --> run["Run it"]
+    run --> debug["Debug"]
+    debug --> explain["Explain it"]
+    explain --> pr["Open PR"]
+    pr --> demo["Demo"]
+```
 
 ## Optional Bonus Topics
 
