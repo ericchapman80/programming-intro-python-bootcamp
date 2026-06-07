@@ -6,6 +6,28 @@ Complete the bootcamp with a final project demo and a thoughtful retrospective.
 
 By the end of this phase, you should be able to run the final app, explain the most important files, describe the major concepts from the bootcamp, make one small live change without AI, and reflect on what you learned.
 
+> [!TIP]
+> The final demo is not about sounding like an expert. It is about proving you understand your own project.
+
+## At A Glance
+
+| You will | What it proves |
+| --- | --- |
+| Run the app | The project works |
+| Explain key files | You understand the repo |
+| Make a live change | You can modify it yourself |
+| Reflect honestly | You learned from the process |
+| Open final PR | You can finish with the full workflow |
+
+```mermaid
+flowchart LR
+    app["Show app"] --> files["Explain files"]
+    files --> concept["Teach one concept"]
+    concept --> live["Live change"]
+    live --> reflect["Retrospective"]
+    reflect --> next["What I build next"]
+```
+
 ## Why This Phase Matters
 
 A project is not really finished until you can explain it.
@@ -250,6 +272,9 @@ Keep this practical. A beginner should be able to follow it.
 
 Use this script:
 
+> [!NOTE]
+> Use this as a guide, not a speech to memorize. Natural explanation beats perfect wording.
+
 ```text
 1. This is Track Career Analyzer.
 2. It started as a small Python terminal app.
@@ -285,6 +310,9 @@ During the demo:
 ## Step 10: Explain AI Use
 
 Be specific.
+
+> [!IMPORTANT]
+> Responsible AI use means you can explain what AI helped with and what you changed yourself.
 
 Good explanation:
 
@@ -444,4 +472,3 @@ The bootcamp is complete when:
 - The student can make one small live change without AI.
 - The final retrospective is complete.
 - The final pull request is opened and reviewed.
-

@@ -2,6 +2,9 @@
 
 Every phase ends with a short show-and-tell demo.
 
+> [!IMPORTANT]
+> A demo is not a performance. It is a learning check. Pausing, correcting yourself, and explaining a mistake are all part of the work.
+
 ## Demo Script
 
 The student should:
@@ -23,3 +26,13 @@ The student should:
 - Add one statistic to a pandas summary.
 - Add one field to the Streamlit dashboard.
 
+## Demo Flow
+
+```mermaid
+flowchart LR
+    run["Run it"] --> explain["Explain change"]
+    explain --> concept["Teach one concept"]
+    concept --> bug["Name one mistake"]
+    bug --> ai["Disclose AI use"]
+    ai --> live["Make live change"]
+```

@@ -1,8 +1,14 @@
-# Programming Intro Python Bootcamp
+# Programming Intro Python Bootcamp 🏃‍♀️💻
 
 A beginner-friendly software engineering bootcamp for an incoming college freshman preparing for an introductory Python course.
 
 This is a curriculum repository. The project app built through the phases is **Track Career Analyzer**, a Python project that grows from a terminal program into a simple data analysis and Streamlit app.
+
+> [!NOTE]
+> 🏁 Start with [Phase 00](phases/phase-00-developer-workstation.md). Each phase is written like a guided working session: read a little, build a little, run it, explain it, then open a pull request.
+
+> [!TIP]
+> ✨ The goal is not to race through the files. The goal is to build enough confidence that Riley can explain what she made without needing AI to speak for her.
 
 ## Goals
 
@@ -29,6 +35,20 @@ The course assumes:
 ## Bootcamp Roadmap
 
 The bootcamp is designed for 10 phases, roughly 3-5 hours per week and 25-40 total hours.
+
+```mermaid
+flowchart LR
+    setup["00 Setup"] --> first["01 First Python"]
+    first --> profile["02 Athlete Profile"]
+    profile --> goals["03 Goals"]
+    goals --> results["04 Multiple Results"]
+    results --> funcs["05 Functions"]
+    funcs --> csv["06 CSV Persistence"]
+    csv --> pandas["07 pandas Analysis"]
+    pandas --> streamlit["08 Streamlit App"]
+    streamlit --> share["09 Share"]
+    share --> demo["10 Final Demo"]
+```
 
 | Phase | Focus | Main Deliverable |
 | --- | --- | --- |
@@ -65,9 +85,13 @@ This README is the map for the bootcamp. The first real work happens in [Phase 0
 
 If you are the student, start there and follow the instructions one step at a time. Phase 00 teaches how to open Terminal, find the project folder, verify tools, and open the repo in VS Code.
 
+> [!IMPORTANT]
+> Every phase ends with a demo. The demo matters because it proves understanding: run the work, explain one concept, describe one mistake, and make one small live change without AI.
+
 If you are the reviewer or instructor, read these first:
 
 - [AI Guidelines](AI_GUIDELINES.md)
+- [AI Tooling Landscape](docs/ai-tooling-landscape.md)
 - [Reviewer Guide](docs/reviewer-guide.md)
 - [Demo Guide](docs/demo-guide.md)
 
@@ -86,6 +110,17 @@ Each phase should use this workflow:
 9. Address review feedback.
 10. Merge.
 
+```mermaid
+flowchart TD
+    branch["Create phase branch"] --> build["Build and test locally"]
+    build --> commit["Commit meaningful checkpoint"]
+    commit --> push["Push branch to GitHub"]
+    push --> pr["Open pull request"]
+    pr --> demo["Demo and explain"]
+    demo --> review["Address review feedback"]
+    review --> merge["Merge to main"]
+```
+
 ## Public Repo Notes
 
 Before publishing publicly:
@@ -95,6 +130,9 @@ Before publishing publicly:
 - Confirm sample data is safe to publish.
 - Confirm instructor materials do not contain full answer keys.
 - Review `.gitignore` before committing generated files.
+
+> [!WARNING]
+> Public repositories are visible to other people. Before sharing data, check that every row, note, and example is safe to publish.
 
 ## App Link
 
@@ -111,6 +149,8 @@ This project is available under the [MIT License](LICENSE).
 ## Key Documents
 
 - [AI Guidelines](AI_GUIDELINES.md)
+- [AI Tooling Landscape](docs/ai-tooling-landscape.md)
+- [AI Coaching Guide](docs/ai-coaching-guide.md)
 - [Concept Glossary](CONCEPTS.md)
 - [Project Roadmap](docs/project-roadmap.md)
 - [Repo Strategy](docs/repo-strategy.md)

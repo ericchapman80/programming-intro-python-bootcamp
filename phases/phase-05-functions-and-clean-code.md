@@ -6,6 +6,19 @@ Use functions to organize the Track Career Analyzer code into smaller reusable p
 
 By the end of this phase, you should be able to define a function, call a function, pass information into a function with parameters, get information back with a return value, and explain why smaller pieces of code are easier to read.
 
+> [!TIP]
+> Refactoring is like cleaning up your training bag: same gear, easier to find what you need.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Define a function | Name a reusable block of code |
+| Call a function | Run that block when needed |
+| Use parameters | Send information into a function |
+| Use return values | Get information back |
+| Read the main flow | Make code easier to explain |
+
 ## Why This Phase Matters
 
 The app has grown across the first few phases.
@@ -88,6 +101,12 @@ Here, `57.85` is the argument.
 ### Return Value
 
 A return value is information a function sends back.
+
+```mermaid
+flowchart LR
+    input["results list"] --> function["calculate_best_result(results)"]
+    function --> output["best result"]
+```
 
 Example:
 
@@ -346,6 +365,9 @@ Run the app and test the three goal paths again:
 
 At the bottom of the file, the main flow might look like this:
 
+> [!IMPORTANT]
+> The bottom of the file should read like the story of the app. If it does, your function names are helping.
+
 ```python
 show_welcome()
 athlete_name, graduation_year, primary_event, current_pr = get_athlete_profile()
@@ -578,4 +600,3 @@ You are ready for Phase 06 when:
 - You can make one small function change without AI.
 - You committed and pushed your Phase 05 work.
 - You opened a pull request and completed the AI disclosure.
-

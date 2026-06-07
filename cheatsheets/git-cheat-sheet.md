@@ -30,7 +30,17 @@ Local repository
 GitHub remote
 ```
 
+```mermaid
+flowchart TD
+    working["Working folder"] -->|git add| staging["Staging area"]
+    staging -->|git commit| local["Local repository"]
+    local -->|git push| remote["GitHub remote"]
+    remote -->|pull request| review["Review and merge"]
+```
+
 ## Beginner Rule
 
 Run `git status` before and after every important Git command.
 
+> [!TIP]
+> If Git feels confusing, draw this flow and point to where your file is right now.

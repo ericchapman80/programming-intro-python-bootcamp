@@ -6,6 +6,28 @@ Use pandas to analyze saved track results from a CSV file.
 
 By the end of this phase, you should be able to load `results.csv` into a pandas DataFrame, inspect rows and columns, convert the mark column to numbers, calculate basic statistics, filter results, sort results, and explain one useful insight from the data.
 
+> [!TIP]
+> Phase 07 turns saved results into answers.
+
+## At A Glance
+
+| You will | What it teaches |
+| --- | --- |
+| Load a CSV with pandas | Data can become a DataFrame |
+| Inspect rows and columns | Know what data you have |
+| Convert `mark` to numeric | Stats need numbers |
+| Filter one event | Ask focused questions |
+| Calculate stats | Turn data into insight |
+
+```mermaid
+flowchart LR
+    csv["results.csv"] --> dataframe["pandas DataFrame"]
+    dataframe --> clean["numeric mark column"]
+    clean --> filter["filter event"]
+    filter --> stats["best / average / count"]
+    stats --> insight["explain insight"]
+```
+
 ## Why This Phase Matters
 
 Phase 06 taught the app how to remember results in a CSV file.
@@ -48,6 +70,9 @@ The nickname `pd` is a common convention.
 ### DataFrame
 
 A DataFrame is a table inside Python.
+
+> [!NOTE]
+> If you have seen a spreadsheet, you already have a mental model for a DataFrame.
 
 Excel analogy:
 
@@ -282,6 +307,9 @@ Example:
 ## Step 9: Find Best Result By Event
 
 For timed events, lower is better.
+
+> [!IMPORTANT]
+> `groupby()` is pandas asking: "For each event, what statistic should I calculate?"
 
 Add:
 
@@ -625,4 +653,3 @@ You are ready for Phase 08 when:
 - You can add one CSV row and rerun the analysis without AI.
 - You committed and pushed your Phase 07 work.
 - You opened a pull request and completed the AI disclosure.
-

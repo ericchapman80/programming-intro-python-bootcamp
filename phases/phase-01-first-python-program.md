@@ -6,6 +6,19 @@ Run and edit your first Python program.
 
 By the end of this phase, you should be able to open `app/app.py`, explain what `print()` does, run the program from Terminal, make a small change, commit it, push it, and open a pull request.
 
+> [!TIP]
+> Your first win is simple: make Python say something, then change what it says.
+
+## At A Glance
+
+| You will | What it proves |
+| --- | --- |
+| Open `app/app.py` | You can find code in the repo |
+| Run `python3 app.py` | You can execute Python |
+| Edit a `print()` message | You can change program output |
+| Read one error | Bugs are clues, not dead ends |
+| Open a PR | Your code change has a review path |
+
 ## Why This Phase Matters
 
 This is the first time you change code in the Track Career Analyzer app.
@@ -77,6 +90,9 @@ The second example is missing a closing quotation mark.
 ### Error Message
 
 An error message is Python giving you a clue about what went wrong.
+
+> [!IMPORTANT]
+> Do not memorize error messages. Learn to slow down and find the file name, line number, and clue.
 
 Do not panic when you see one. Read it slowly.
 
@@ -195,6 +211,9 @@ You should see your new line in the output.
 
 This step is optional but useful.
 
+> [!WARNING]
+> Break the code only for practice, then fix it before committing. Never commit code you already know is broken.
+
 Temporarily break one line by removing a closing quotation mark:
 
 ```python
@@ -299,6 +318,59 @@ phase-01-first-python -> main
 Fill out the pull request template.
 
 Be specific about AI usage. If you used AI to understand an error message, say what you asked and what you learned.
+
+## Optional Level-Up: AI Assistant Setup 🤖
+
+Do this only after the main Phase 01 work is running, committed, pushed, and opened as a pull request.
+
+The first Python win should be manual: open the file, run it, change it, commit it, and explain it yourself. After that, it is reasonable to set up an AI assistant as a coach.
+
+> [!TIP]
+> This is optional. If setup starts to feel like a distraction, skip it and keep moving to Phase 02.
+
+### Option 1: ChatGPT As A Tutor
+
+Use ChatGPT in the browser or app for explanations, hints, and review questions.
+
+Good uses:
+
+- Explain a Python error message.
+- Ask quiz questions about `print()`, strings, and Terminal commands.
+- Help rewrite a confusing reflection sentence in Riley's own words.
+- Review a small code snippet for readability.
+
+Avoid:
+
+- Asking for the full Phase 01 solution.
+- Asking AI to write the reflection from scratch.
+- Copying code you cannot explain.
+
+### Option 2: One Coding Assistant
+
+If the family wants an IDE or coding assistant, pick one tool to try first.
+
+Examples include:
+
+- OpenAI Codex in an IDE, CLI, app, or web workflow.
+- GitHub Copilot in VS Code.
+- Specialized AI IDEs such as Cursor or Windsurf.
+- Other command-line assistants.
+
+The specific choice depends on the account you already have, comfort level, privacy settings, cost, and how much help feels useful instead of distracting.
+
+Read:
+
+- [AI Guidelines](../AI_GUIDELINES.md)
+- [AI Tooling Landscape](../docs/ai-tooling-landscape.md)
+- [AI Coaching Guide](../docs/ai-coaching-guide.md)
+
+### Phase 01 AI Rules
+
+- Ask for hints before code.
+- Ask AI to explain errors, not erase them.
+- Keep the final code small enough to explain.
+- Say exactly how AI helped in the PR.
+- Make the demo live change without AI.
 
 ## Common Stuck Points
 
