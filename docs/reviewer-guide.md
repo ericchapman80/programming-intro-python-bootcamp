@@ -63,7 +63,7 @@ Move on when:
 | 06 | CSV persistence | `app/app.py`, `app/data/results.csv`, `reflections/phase-06-reflection.md` | `python3 app.py` | Save result and show CSV changed |
 | 07 | pandas analysis | `app/app.py`, `app/data/results.csv`, `reflections/phase-07-reflection.md` | `python3 app.py` | Filter event and show one statistic |
 | 08 | Streamlit app | `app/streamlit_app.py`, `reflections/phase-08-reflection.md` | `streamlit run streamlit_app.py` | Browser demo with table, metric, and chart |
-| 09 | Deployment and sharing | README, app config | Deployment command TBD | Public-readiness check |
+| 09 | Deployment and sharing | `README.md`, `app/README.md`, `docs/sharing-note-template.md`, `reflections/phase-09-reflection.md` | `streamlit run streamlit_app.py` | Public-readiness check and sharing note |
 | 10 | Final explanation | README, reflection | App run command | Final walkthrough |
 
 For detailed Phase 00 review guidance, use [Phase 00 Review Checklist](../instructor/reviewer-checklists/phase-00-review-checklist.md).
@@ -83,3 +83,5 @@ For detailed Phase 06 review guidance, use [Phase 06 Review Checklist](../instru
 For detailed Phase 07 review guidance, use [Phase 07 Review Checklist](../instructor/reviewer-checklists/phase-07-review-checklist.md).
 
 For detailed Phase 08 review guidance, use [Phase 08 Review Checklist](../instructor/reviewer-checklists/phase-08-review-checklist.md).
+
+For detailed Phase 09 review guidance, use [Phase 09 Review Checklist](../instructor/reviewer-checklists/phase-09-review-checklist.md).
