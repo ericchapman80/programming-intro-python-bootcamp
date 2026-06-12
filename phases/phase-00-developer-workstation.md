@@ -15,8 +15,8 @@ By the end of this phase, you should be able to open Terminal, find this project
 | --- | --- |
 | Open Terminal | Developers need a command center |
 | Set up GitHub SSH access | GitHub needs to know this Mac is allowed to clone and push |
+| Install and verify tools | You need Python, Git, Homebrew, and VS Code ready |
 | Open the repo in VS Code | Code lives in project folders |
-| Verify tools | You need Python, Git, Homebrew, and VS Code ready |
 | Create a branch and PR | Every phase practices real GitHub workflow |
 | Optional: read the Brewfile | See how setup can be automated later |
 
@@ -44,7 +44,7 @@ You are learning the developer workspace:
 
 ## Time Estimate
 
-Plan for 60-90 minutes.
+Plan for 90-120 minutes.
 
 Take more time if Terminal is new. That is normal.
 
@@ -56,8 +56,8 @@ You need:
 - Internet access
 - A GitHub account
 - Write access to this GitHub repository
-- VS Code installed
 - This repository available on GitHub
+- Enough free disk space to install developer tools
 
 You do not need to understand Python yet.
 
@@ -112,7 +112,122 @@ Use `pwd` again to see where you are now.
 
 Beginner rule: when you feel lost in Terminal, run `pwd`.
 
-## Step 3: Set Up GitHub SSH Access
+## Step 3: Install And Verify Developer Tools
+
+This step makes sure your Mac has the tools this bootcamp needs.
+
+Run each command separately. If a command works, move to the next one. If a command says `command not found`, install that tool using the instructions below.
+
+### Git
+
+Check Git:
+
+```bash
+git --version
+```
+
+If Git is missing, macOS may ask you to install Apple's Command Line Tools.
+
+You can start that installer yourself with:
+
+```bash
+xcode-select --install
+```
+
+> [!IMPORTANT]
+> You do not need the full Xcode app for this bootcamp. If the App Store opens and asks you to install Xcode, cancel that. You only need Apple's Command Line Tools.
+
+If the Command Line Tools installer says it needs much more free space, such as 20 GB, stop and ask for help. Freeing disk space is better than installing the full Xcode app.
+
+After installation finishes, check again:
+
+```bash
+git --version
+```
+
+If Homebrew is already installed and Git is still missing, you can install Git with:
+
+```bash
+brew install git
+```
+
+### Homebrew
+
+Check Homebrew:
+
+```bash
+brew --version
+```
+
+If Homebrew is missing, install it with the official Homebrew install command:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Read the messages that Homebrew prints. If it shows a section named `Next steps`, copy and run those commands too. They teach Terminal where to find `brew`.
+
+Then check again:
+
+```bash
+brew --version
+```
+
+### Python
+
+Check Python:
+
+```bash
+python3 --version
+```
+
+If Python 3 is missing, install it with Homebrew:
+
+```bash
+brew install python
+```
+
+Then check again:
+
+```bash
+python3 --version
+```
+
+### VS Code
+
+Check the VS Code command line tool:
+
+```bash
+code --version
+```
+
+If `code` is missing but VS Code is already installed, open VS Code and install the shell command:
+
+```text
+Command Palette -> Shell Command: Install 'code' command in PATH
+```
+
+If VS Code is not installed, install it with Homebrew:
+
+```bash
+brew install --cask visual-studio-code
+```
+
+You can also download VS Code from:
+
+```text
+https://code.visualstudio.com/download
+```
+
+Then open a new Terminal window and check again:
+
+```bash
+code --version
+```
+
+Do not worry if your version numbers differ from someone else's.
+
+## Step 4: Set Up GitHub SSH Access
 
 GitHub needs a way to recognize your Mac before you clone, push, and open pull requests. This bootcamp uses SSH keys for that.
 
@@ -168,7 +283,7 @@ Expected idea: GitHub should recognize your username. It may say GitHub does not
 
 If GitHub says `Permission denied (publickey)`, the key is not connected correctly yet. Stop and ask for help before cloning.
 
-## Step 4: Get The Project Onto Your Mac
+## Step 5: Get The Project Onto Your Mac
 
 If the repository is not already on your Mac, clone it from GitHub.
 
@@ -206,7 +321,7 @@ programming-intro-python-bootcamp
 
 If the repo is already on your Mac, navigate to that folder instead of cloning again.
 
-## Step 5: Open The Project In VS Code
+## Step 6: Open The Project In VS Code
 
 From inside the project folder, run:
 
@@ -223,36 +338,6 @@ File -> Open Folder
 ```
 
 Choose the `programming-intro-python-bootcamp` folder.
-
-## Step 6: Verify Developer Tools
-
-Run each command separately.
-
-```bash
-brew --version
-```
-
-Confirms Homebrew is installed.
-
-```bash
-python3 --version
-```
-
-Confirms Python 3 is installed.
-
-```bash
-git --version
-```
-
-Confirms Git is installed.
-
-```bash
-code --version
-```
-
-Confirms the VS Code command line tool is installed.
-
-Do not worry if your version numbers differ from someone else's.
 
 ## Step 7: Inspect The Repository
 
@@ -429,6 +514,32 @@ Important idea:
 This is a small preview of reproducible developer environments. It is not required to move on.
 
 ## Common Stuck Points
+
+### macOS asks me to install Xcode
+
+Cancel the full Xcode install. This bootcamp only needs Apple's Command Line Tools.
+
+Run:
+
+```bash
+xcode-select --install
+```
+
+If that installer also asks for a lot of disk space, stop and free space before continuing.
+
+### `brew` says `command not found`
+
+Homebrew is not installed yet, or Terminal does not know where to find it.
+
+Go back to Step 3 and run the Homebrew install command. If Homebrew prints `Next steps`, run those commands too.
+
+### `python3` says `command not found`
+
+Install Python with Homebrew:
+
+```bash
+brew install python
+```
 
 ### `code .` does not work
 
