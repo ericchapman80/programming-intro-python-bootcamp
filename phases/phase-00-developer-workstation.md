@@ -14,6 +14,7 @@ By the end of this phase, you should be able to open Terminal, find this project
 | You will | Why it matters |
 | --- | --- |
 | Open Terminal | Developers need a command center |
+| Set up GitHub SSH access | GitHub needs to know this Mac is allowed to clone and push |
 | Open the repo in VS Code | Code lives in project folders |
 | Verify tools | You need Python, Git, Homebrew, and VS Code ready |
 | Create a branch and PR | Every phase practices real GitHub workflow |
@@ -54,6 +55,7 @@ You need:
 - A MacBook
 - Internet access
 - A GitHub account
+- Write access to this GitHub repository
 - VS Code installed
 - This repository available on GitHub
 
@@ -110,7 +112,63 @@ Use `pwd` again to see where you are now.
 
 Beginner rule: when you feel lost in Terminal, run `pwd`.
 
-## Step 3: Get The Project Onto Your Mac
+## Step 3: Set Up GitHub SSH Access
+
+GitHub needs a way to recognize your Mac before you clone, push, and open pull requests. This bootcamp uses SSH keys for that.
+
+First, check whether your Mac already has an SSH key:
+
+```bash
+ls ~/.ssh
+```
+
+If you see a file named `id_ed25519.pub`, you probably already have a key. Skip the `ssh-keygen` command and continue with the SSH agent step below.
+
+If you do not see `id_ed25519.pub`, create a new key. Use the email address connected to your GitHub account:
+
+```bash
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
+
+When Terminal asks where to save the key, press `Enter` to accept the default location.
+
+When Terminal asks for a passphrase, you can press `Enter` twice to leave it blank for this beginner setup.
+
+Add the key to your Mac's SSH agent:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+
+Copy your public key:
+
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+Now add the key to GitHub:
+
+1. Open GitHub in your browser.
+2. Click your profile picture.
+3. Open `Settings`.
+4. Open `SSH and GPG keys`.
+5. Click `New SSH key`.
+6. Use a title like `Riley MacBook`.
+7. Paste the copied key.
+8. Click `Add SSH key`.
+
+Test the connection:
+
+```bash
+ssh -T git@github.com
+```
+
+Expected idea: GitHub should recognize your username. It may say GitHub does not provide shell access. That is okay.
+
+If GitHub says `Permission denied (publickey)`, the key is not connected correctly yet. Stop and ask for help before cloning.
+
+## Step 4: Get The Project Onto Your Mac
 
 If the repository is not already on your Mac, clone it from GitHub.
 
@@ -125,7 +183,7 @@ cd projects
 Clone the repository:
 
 ```bash
-git clone https://github.com/ericchapman80/programming-intro-python-bootcamp.git
+git clone git@github.com:ericchapman80/programming-intro-python-bootcamp.git
 ```
 
 Move into the project:
@@ -148,7 +206,7 @@ programming-intro-python-bootcamp
 
 If the repo is already on your Mac, navigate to that folder instead of cloning again.
 
-## Step 4: Open The Project In VS Code
+## Step 5: Open The Project In VS Code
 
 From inside the project folder, run:
 
@@ -166,7 +224,7 @@ File -> Open Folder
 
 Choose the `programming-intro-python-bootcamp` folder.
 
-## Step 5: Verify Developer Tools
+## Step 6: Verify Developer Tools
 
 Run each command separately.
 
@@ -196,7 +254,7 @@ Confirms the VS Code command line tool is installed.
 
 Do not worry if your version numbers differ from someone else's.
 
-## Step 6: Inspect The Repository
+## Step 7: Inspect The Repository
 
 From the project folder, run:
 
@@ -229,7 +287,7 @@ Expected idea:
 
 The exact wording may vary.
 
-## Step 7: Create Your Phase Branch
+## Step 8: Create Your Phase Branch
 
 Branches let you work without changing the main version immediately.
 
@@ -256,7 +314,7 @@ If the branch already exists, use:
 git switch phase-00-setup
 ```
 
-## Step 8: Make A Small Learning Change
+## Step 9: Make A Small Learning Change
 
 Create a reflection file for this phase:
 
@@ -278,7 +336,7 @@ Fill in short answers for:
 
 This reflection is the deliverable for Phase 00.
 
-## Step 9: Save Your Work With Git
+## Step 10: Save Your Work With Git
 
 Check changed files:
 
@@ -304,7 +362,7 @@ Push your branch to GitHub:
 git push -u origin phase-00-setup
 ```
 
-## Step 10: Open A Pull Request
+## Step 11: Open A Pull Request
 
 Go to this repository on GitHub:
 
@@ -385,6 +443,10 @@ Command Palette -> Shell Command: Install 'code' command in PATH
 ### `git clone` says the folder already exists
 
 You probably already cloned the repo. Use `cd programming-intro-python-bootcamp` instead.
+
+### `git clone` or `git push` says `Permission denied (publickey)`
+
+GitHub does not recognize this Mac's SSH key yet. Go back to Step 3 and make sure the public key was added to GitHub.
 
 ### `git switch -c phase-00-setup` says the branch already exists
 
